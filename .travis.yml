@@ -5,5 +5,5 @@ services:
 before_install:
     - docker build -t djindaliitkgp/react -f Dockerfile.dev .
 
-scripts:
+script:
     - docker run djindaliitkgp/react npm run test -- --coverage
